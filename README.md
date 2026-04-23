@@ -28,3 +28,28 @@ The goal is to turn raw public data into clear, visual insights that help users 
 ---
 
 ## Project Structure
+uk-cost-living-tracker/
+│
+├── data/
+│   ├── raw/                  # Original datasets (unchanged)
+│   ├── processed/           # Cleaned datasets ready for analysis
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_analysis_visualisation.ipynb
+│
+├── scripts/
+│   ├── data_collector.py    # Fetch data from APIs / sources
+│   ├── data_cleaning.py     # Cleaning and preprocessing
+│   ├── analysis.py          # Core analysis functions
+│
+├── dashboard/
+│   ├── app.py               # Streamlit dashboard (optional but strong)
+│
+├── visuals/
+│   ├── charts/              # Saved graphs and plots
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
